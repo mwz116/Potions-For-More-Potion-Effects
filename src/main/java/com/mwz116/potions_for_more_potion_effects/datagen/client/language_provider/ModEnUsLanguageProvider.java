@@ -1,0 +1,61 @@
+package com.mwz116.potions_for_more_potion_effects.datagen.client.language_provider;
+
+import com.mwz116.potions_for_more_potion_effects.PotionsForMorePotionEffects;
+
+import com.mwz116.potions_for_more_potion_effects.item.ModItems;
+import com.mwz116.potions_for_more_potion_effects.potions.ModPotions;
+import com.mwz116.potions_for_more_potion_effects.potions.custom.ModPotion;
+import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.alchemy.Potion;
+import net.neoforged.neoforge.common.data.LanguageProvider;
+import net.neoforged.neoforge.registries.DeferredHolder;
+
+public class ModEnUsLanguageProvider extends LanguageProvider {
+    public ModEnUsLanguageProvider(PackOutput output) {
+        super(output, PotionsForMorePotionEffects.MODID, "en_us");
+    }
+
+    @Override
+    protected void addTranslations() {
+
+        add(ModItems.POINTED_BONE.get(), "Pointed Bone");
+
+        addPotion(ModPotions.SWEET_POTION,"Sweet");
+        addPotion(ModPotions.DISGUSTING_POTION,"Disgusting");
+        addPotion(ModPotions.STATIC_LIFE_POTION, "Static Life");
+        addPotion(ModPotions.SOLID_SHIELD_POTION, "Solid Shield");
+        addPotion(ModPotions.INJURY_LIMITATION_POTION, "Injury Limitation");
+        addPotion(ModPotions.IMMORTAL_POTION, "Immortal");
+        addPotion(ModPotions.IMMUNE_POTION, "Immune");
+        addPotion(ModPotions.CLIMBING_POTION, "Climbing");
+        addPotion(ModPotions.FRAGILE_POTION, "fragile");
+        addPotion(ModPotions.GILLS_POTION, "gills");
+        addPotion(ModPotions.GLOWING_GILLS_POTION, "glowing_gills");
+        addPotion(ModPotions.LEECHING_POTION, "Leeching");
+        addPotion(ModPotions.MELEE_DOMAIN_POTION, "Melee Domain");
+        addPotion(ModPotions.MORE_RANGE_POTION, "More Range");
+        addPotion(ModPotions.TOUCH_POTION, "Touch");
+        addPotion(ModPotions.CALMING_POTION, "Calming");
+        addPotion(ModPotions.FEAR_POTION, "Fear");
+    }
+
+
+    private void addPotion(DeferredHolder<Potion, ? extends ModPotion> holder, String translation) {
+        String path = holder.get().getName();
+
+        add("item.minecraft.potion.effect." + path, translation + " Potion");
+        add("item.minecraft.splash_potion.effect." + path , "Splash " + translation + " Potion");
+        add("item.minecraft.lingering_potion.effect." + path, "Lingering " + translation + " Potion");
+        add("item.minecraft.tipped_arrow.effect." + path, "Arrow of " + translation + " Potion");
+    }
+
+    private void addPotion(String path, String translation) {
+        path = path.replace(":",".").replace("/",".");
+
+        add("item.minecraft.potion.effect." + path, translation + " Potion");
+        add("item.minecraft.splash_potion.effect." + path , "Splash " + translation + " Potion");
+        add("item.minecraft.lingering_potion.effect." + path, "Lingering " + translation + " Potion");
+        add("item.minecraft.tipped_arrow.effect." + path, "Arrow of " + translation + " Potion");
+    }
+
+}

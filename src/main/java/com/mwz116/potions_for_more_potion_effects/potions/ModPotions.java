@@ -128,15 +128,15 @@ public class ModPotions {
     ));
 
     public static DeferredHolder<Potion, ModPotion> MELEE_DOMAIN_POTION = POTIONS.register("melee_domain", () -> new ModPotion(
-            "melee_domain", new MobEffectInstance(MorePotionEffectsModMobEffects.MELEE_DOMAIN, 3600 ,0)
+            "melee_domain", new MobEffectInstance(MorePotionEffectsModMobEffects.MELEE_DOMAIN, 900 ,0)
     ));
 
     public static DeferredHolder<Potion, ModPotion> LONG_MELEE_DOMAIN_POTION = POTIONS.register("long_melee_domain", () -> new ModPotion(
-            "melee_domain", new MobEffectInstance(MorePotionEffectsModMobEffects.MELEE_DOMAIN, 9600 ,0)
+            "melee_domain", new MobEffectInstance(MorePotionEffectsModMobEffects.MELEE_DOMAIN, 1800 ,0)
     ));
 
     public static DeferredHolder<Potion, ModPotion> STRONG_MELEE_DOMAIN_POTION = POTIONS.register("strong_melee_domain", () -> new ModPotion(
-            "melee_domain", new MobEffectInstance(MorePotionEffectsModMobEffects.MELEE_DOMAIN, 1800 ,1)
+            "melee_domain", new MobEffectInstance(MorePotionEffectsModMobEffects.MELEE_DOMAIN, 450 ,1)
     ));
 
     public static DeferredHolder<Potion, ModPotion> MORE_RANGE_POTION = POTIONS.register("more_range", () -> new ModPotion(

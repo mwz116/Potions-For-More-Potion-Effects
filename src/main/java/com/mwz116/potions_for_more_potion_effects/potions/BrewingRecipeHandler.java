@@ -118,7 +118,7 @@ public class BrewingRecipeHandler {
                 ModPotions.LEECHING_POTION,
                 ModPotions.LONG_LEECHING_POTION,
                 ModPotions.DISGUSTING_POTION,
-                ModItems.POINTED_BONE.get());
+                ModItems.SHARP_BONE.get());
 
         addPotionMix(builder,
                 ModPotions.MELEE_DOMAIN_POTION,

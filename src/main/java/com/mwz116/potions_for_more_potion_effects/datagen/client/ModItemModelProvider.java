@@ -15,7 +15,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
 
-        basicItem(ModItems.POINTED_BONE.get());
+        basicItem(ModItems.SHARP_BONE.get());
 
     }
 }

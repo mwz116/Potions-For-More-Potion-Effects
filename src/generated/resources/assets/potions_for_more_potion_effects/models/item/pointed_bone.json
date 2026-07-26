@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "potions_for_more_potion_effects:item/pointed_bone"
-  }
-}

@@ -2,6 +2,7 @@ package com.mwz116.potions_for_more_potion_effects.datagen.client.language_provi
 
 import com.mwz116.potions_for_more_potion_effects.PotionsForMorePotionEffects;
 
+import com.mwz116.potions_for_more_potion_effects.item.ModCreativeModeTabs;
 import com.mwz116.potions_for_more_potion_effects.item.ModItems;
 import com.mwz116.potions_for_more_potion_effects.potions.ModPotions;
 import com.mwz116.potions_for_more_potion_effects.potions.custom.ModPotion;
@@ -18,7 +19,9 @@ public class ModZhCnLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
 
-        add(ModItems.POINTED_BONE.get(), "尖骨");
+        add("itemGroup.potions_for_more_potion_effects", "更多药水效果：药水");
+
+        add(ModItems.SHARP_BONE.get(), "尖骨");
 
         addPotion(ModPotions.SWEET_POTION,"甘甜的");
         addPotion(ModPotions.DISGUSTING_POTION,"恶心的");

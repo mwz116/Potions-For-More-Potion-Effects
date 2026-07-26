@@ -67,5 +67,6 @@
   "item.minecraft.tipped_arrow.effect.static_life": "生命静止之箭",
   "item.minecraft.tipped_arrow.effect.sweet_potion": "甘甜的之箭",
   "item.minecraft.tipped_arrow.effect.touch": "触及之箭",
-  "item.potions_for_more_potion_effects.pointed_bone": "尖骨"
+  "item.potions_for_more_potion_effects.sharp_bone": "尖骨",
+  "itemGroup.potions_for_more_potion_effects": "更多药水效果：药水"
 }

@@ -10,7 +10,9 @@ public class ModItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(PotionsForMorePotionEffects.MODID);
 
-    public static final DeferredHolder<Item, Item> POINTED_BONE = ITEMS.register("pointed_bone", () -> new Item(new Item.Properties()));
+
+
+    public static final DeferredHolder<Item, Item> SHARP_BONE = ITEMS.register("sharp_bone", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);

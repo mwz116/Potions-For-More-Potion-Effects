@@ -67,5 +67,6 @@
   "item.minecraft.tipped_arrow.effect.static_life": "Arrow of Static Life Potion",
   "item.minecraft.tipped_arrow.effect.sweet_potion": "Arrow of Sweet Potion",
   "item.minecraft.tipped_arrow.effect.touch": "Arrow of Touch Potion",
-  "item.potions_for_more_potion_effects.pointed_bone": "Pointed Bone"
+  "item.potions_for_more_potion_effects.sharp_bone": "Sharp Bone",
+  "itemGroup.potions_for_more_potion_effects": "Potions For More Potion Effects"
 }

@@ -16,7 +16,7 @@ public class ModRecipeProvider extends RecipeProvider {
     @Override
     protected void buildRecipes(RecipeOutput output) {
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.POINTED_BONE.get(), 2)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SHARP_BONE.get(), 2)
                 .requires(Items.BONE)
                 .requires(Items.FLINT)
                 .unlockedBy("has_bone", has(Items.BONE))

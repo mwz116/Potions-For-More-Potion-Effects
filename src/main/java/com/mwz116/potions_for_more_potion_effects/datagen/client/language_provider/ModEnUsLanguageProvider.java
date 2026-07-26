@@ -2,6 +2,7 @@ package com.mwz116.potions_for_more_potion_effects.datagen.client.language_provi
 
 import com.mwz116.potions_for_more_potion_effects.PotionsForMorePotionEffects;
 
+import com.mwz116.potions_for_more_potion_effects.item.ModCreativeModeTabs;
 import com.mwz116.potions_for_more_potion_effects.item.ModItems;
 import com.mwz116.potions_for_more_potion_effects.potions.ModPotions;
 import com.mwz116.potions_for_more_potion_effects.potions.custom.ModPotion;
@@ -18,7 +19,9 @@ public class ModEnUsLanguageProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
 
-        add(ModItems.POINTED_BONE.get(), "Pointed Bone");
+        add("itemGroup.potions_for_more_potion_effects", "Potions For More Potion Effects");
+
+        add(ModItems.SHARP_BONE.get(), "Sharp Bone");
 
         addPotion(ModPotions.SWEET_POTION,"Sweet");
         addPotion(ModPotions.DISGUSTING_POTION,"Disgusting");

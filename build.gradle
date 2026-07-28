@@ -132,7 +132,7 @@ configurations {
 
 dependencies {
 
-    implementation("curse.maven:more-potion-effects-1106489:8332818")
+    implementation("curse.maven:more-potion-effects-1106489:8512995")
 
     localRuntime "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
 

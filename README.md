@@ -29,5 +29,8 @@ This mod is an add-on for mod **"[More Potion Effects](https://www.curseforge.co
 15.  Touch Potion
 16.  Calming Potion
 17.  Fear Potion
+18.  True Damage Potion
+19.  Self-Healing Potion
+20.  Percentage Recovery Potion
 
 **(📢This mod is currently in early development and more potions will be added in future versions)**

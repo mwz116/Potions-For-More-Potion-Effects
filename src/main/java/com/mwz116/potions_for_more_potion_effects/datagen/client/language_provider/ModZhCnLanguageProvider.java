@@ -40,6 +40,9 @@ public class ModZhCnLanguageProvider extends LanguageProvider {
         addPotion(ModPotions.TOUCH_POTION, "触及");
         addPotion(ModPotions.CALMING_POTION, "镇静");
         addPotion(ModPotions.FEAR_POTION, "恐惧");
+        addPotion(ModPotions.TRUE_DAMAGE_POTION, "真伤");
+        addPotion(ModPotions.SELF_HEALING_POTION, "自愈");
+        addPotion(ModPotions.PERCENTAGE_RECOVERY_POTION, "百分比恢复");
     }
 
 

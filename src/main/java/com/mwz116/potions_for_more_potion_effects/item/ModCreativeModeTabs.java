@@ -39,7 +39,9 @@ public class ModCreativeModeTabs {
                 acceptPotion(output, ModPotions.TOUCH_POTION, ModPotions.LONG_TOUCH_POTION, ModPotions.STRONG_TOUCH_POTION);
                 acceptPotion(output, ModPotions.CALMING_POTION, ModPotions.LONG_CALMING_POTION, ModPotions.STRONG_CALMING_POTION);
                 acceptPotion(output, ModPotions.FEAR_POTION, ModPotions.LONG_FEAR_POTION, ModPotions.STRONG_FEAR_POTION);
-
+                acceptPotion(output, ModPotions.TRUE_DAMAGE_POTION, ModPotions.LONG_TRUE_DAMAGE_POTION, ModPotions.STRONG_TRUE_DAMAGE_POTION);
+                acceptPotion(output, ModPotions.SELF_HEALING_POTION, ModPotions.LONG_SELF_HEALING_POTION, ModPotions.STRONG_SELF_HEALING_POTION);
+                acceptPotion(output, ModPotions.PERCENTAGE_RECOVERY_POTION, ModPotions.LONG_PERCENTAGE_RECOVERY_POTION, ModPotions.STRONG_PERCENTAGE_RECOVERY_POTION);
             })
             .build()
 

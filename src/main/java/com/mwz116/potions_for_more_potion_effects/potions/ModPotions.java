@@ -187,6 +187,42 @@ public class ModPotions {
             "fear", new MobEffectInstance(MorePotionEffectsModMobEffects.FEAR, 1800 ,1)
     ));
 
+    public static DeferredHolder<Potion, ModPotion> TRUE_DAMAGE_POTION = POTIONS.register("true_damage", () -> new ModPotion(
+            "true_damage", new MobEffectInstance(MorePotionEffectsModMobEffects.TRUE_DAMAGE, 3600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> LONG_TRUE_DAMAGE_POTION = POTIONS.register("long_true_damage", () -> new ModPotion(
+            "true_damage", new MobEffectInstance(MorePotionEffectsModMobEffects.TRUE_DAMAGE, 9600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> STRONG_TRUE_DAMAGE_POTION = POTIONS.register("strong_true_damage", () -> new ModPotion(
+            "true_damage", new MobEffectInstance(MorePotionEffectsModMobEffects.TRUE_DAMAGE, 1800 ,1)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> SELF_HEALING_POTION = POTIONS.register("self_healing", () -> new ModPotion(
+            "self_healing", new MobEffectInstance(MorePotionEffectsModMobEffects.SELF_HEALING, 3600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> LONG_SELF_HEALING_POTION = POTIONS.register("long_self_healing", () -> new ModPotion(
+            "self_healing", new MobEffectInstance(MorePotionEffectsModMobEffects.SELF_HEALING, 9600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> STRONG_SELF_HEALING_POTION = POTIONS.register("strong_self_healing", () -> new ModPotion(
+            "self_healing", new MobEffectInstance(MorePotionEffectsModMobEffects.SELF_HEALING, 1800 ,1)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> PERCENTAGE_RECOVERY_POTION = POTIONS.register("percentage_recovery", () -> new ModPotion(
+            "percentage_recovery", new MobEffectInstance(MorePotionEffectsModMobEffects.PERCENTAGE_RECOVERY, 3600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> LONG_PERCENTAGE_RECOVERY_POTION = POTIONS.register("long_percentage_recovery", () -> new ModPotion(
+            "percentage_recovery", new MobEffectInstance(MorePotionEffectsModMobEffects.PERCENTAGE_RECOVERY, 9600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> STRONG_PERCENTAGE_RECOVERY_POTION = POTIONS.register("strong_percentage_recovery", () -> new ModPotion(
+            "percentage_recovery", new MobEffectInstance(MorePotionEffectsModMobEffects.PERCENTAGE_RECOVERY, 1800 ,1)
+    ));
+
 
     public static void register(IEventBus bus) {
         POTIONS.register(bus);

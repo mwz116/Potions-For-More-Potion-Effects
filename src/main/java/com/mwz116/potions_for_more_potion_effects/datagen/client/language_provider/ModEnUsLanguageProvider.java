@@ -40,25 +40,28 @@ public class ModEnUsLanguageProvider extends LanguageProvider {
         addPotion(ModPotions.TOUCH_POTION, "Touch");
         addPotion(ModPotions.CALMING_POTION, "Calming");
         addPotion(ModPotions.FEAR_POTION, "Fear");
+        addPotion(ModPotions.TRUE_DAMAGE_POTION, "True Damage");
+        addPotion(ModPotions.SELF_HEALING_POTION, "Self-Healing");
+        addPotion(ModPotions.PERCENTAGE_RECOVERY_POTION, "Percentage Recovery");
     }
 
 
     private void addPotion(DeferredHolder<Potion, ? extends ModPotion> holder, String translation) {
         String path = holder.get().getName();
 
-        add("item.minecraft.potion.effect." + path, translation + " Potion");
-        add("item.minecraft.splash_potion.effect." + path , "Splash " + translation + " Potion");
-        add("item.minecraft.lingering_potion.effect." + path, "Lingering " + translation + " Potion");
-        add("item.minecraft.tipped_arrow.effect." + path, "Arrow of " + translation + " Potion");
+        add("item.minecraft.potion.effect." + path, "Potion of " + translation);
+        add("item.minecraft.splash_potion.effect." + path , "Splash Potion of " + translation);
+        add("item.minecraft.lingering_potion.effect." + path, "Lingering Potion of " + translation);
+        add("item.minecraft.tipped_arrow.effect." + path, "Arrow of " + translation);
     }
 
     private void addPotion(String path, String translation) {
         path = path.replace(":",".").replace("/",".");
 
-        add("item.minecraft.potion.effect." + path, translation + " Potion");
-        add("item.minecraft.splash_potion.effect." + path , "Splash " + translation + " Potion");
-        add("item.minecraft.lingering_potion.effect." + path, "Lingering " + translation + " Potion");
-        add("item.minecraft.tipped_arrow.effect." + path, "Arrow of " + translation + " Potion");
+        add("item.minecraft.potion.effect." + path, "Potion of " + translation);
+        add("item.minecraft.splash_potion.effect." + path , "Splash Potion of " + translation);
+        add("item.minecraft.lingering_potion.effect." + path, "Lingering Potion of " + translation);
+        add("item.minecraft.tipped_arrow.effect." + path, "Arrow of " + translation);
     }
 
 }

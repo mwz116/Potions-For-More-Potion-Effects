@@ -163,6 +163,28 @@ public class BrewingRecipeHandler {
                 ModPotions.STRONG_FEAR_POTION,
                 true);
 
+        addPotionMix(builder,
+                ModPotions.TRUE_DAMAGE_POTION,
+                ModPotions.LONG_TRUE_DAMAGE_POTION,
+                ModPotions.STRONG_TRUE_DAMAGE_POTION,
+                ModPotions.MORE_RANGE_POTION,
+                Items.IRON_SWORD
+                );
+
+        addPotionMix(builder,
+                ModPotions.SELF_HEALING_POTION,
+                ModPotions.LONG_SELF_HEALING_POTION,
+                ModPotions.STRONG_SELF_HEALING_POTION,
+                Potions.HEALING,
+                Items.BREAD);
+
+        addPotionMix(builder,
+                ModPotions.PERCENTAGE_RECOVERY_POTION,
+                ModPotions.LONG_PERCENTAGE_RECOVERY_POTION,
+                ModPotions.STRONG_PERCENTAGE_RECOVERY_POTION,
+                Potions.HEALING,
+                Items.WHEAT);
+
 
     }
 

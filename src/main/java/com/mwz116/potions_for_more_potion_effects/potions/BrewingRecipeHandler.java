@@ -10,7 +10,6 @@ import net.minecraft.world.item.alchemy.PotionBrewing;
 import net.minecraft.world.item.alchemy.Potions;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
@@ -83,7 +82,6 @@ public class BrewingRecipeHandler {
                 Items.GOLD_INGOT,
                 Items.GOLDEN_APPLE
                 );
-
         builder.addMix(
                 ModPotions.STRONG_IMMUNE_POTION,
                 Items.GOLD_BLOCK,
@@ -117,7 +115,7 @@ public class BrewingRecipeHandler {
         addPotionMix(builder,
                 ModPotions.LEECHING_POTION,
                 ModPotions.LONG_LEECHING_POTION,
-                ModPotions.DISGUSTING_POTION,
+                Potions.HEALING,
                 ModItems.SHARP_BONE.get());
 
         addPotionMix(builder,
@@ -170,6 +168,17 @@ public class BrewingRecipeHandler {
                 ModPotions.MORE_RANGE_POTION,
                 Items.IRON_SWORD
                 );
+        //  添加当使用对应前置药水的不同强度变种来酿造时，所酿造出的不同的强度变种的此药水的配方
+        addPotionMix(builder,
+                ModPotions.LONG_TRUE_DAMAGE_POTION,
+                ModPotions.LONG_MORE_RANGE_POTION,
+                Items.IRON_SWORD
+        );
+        addPotionMix(builder,
+                ModPotions.STRONG_TRUE_DAMAGE_POTION,
+                ModPotions.STRONG_MORE_RANGE_POTION,
+                Items.IRON_SWORD
+        );
 
         addPotionMix(builder,
                 ModPotions.SELF_HEALING_POTION,

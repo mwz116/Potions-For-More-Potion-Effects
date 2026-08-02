@@ -1,5 +1,6 @@
 package com.mwz116.potions_for_more_potion_effects;
 
+import com.mwz116.potions_for_more_potion_effects.block.ModBlocks;
 import com.mwz116.potions_for_more_potion_effects.item.ModCreativeModeTabs;
 import com.mwz116.potions_for_more_potion_effects.item.ModItems;
 import com.mwz116.potions_for_more_potion_effects.potions.ModPotions;
@@ -21,6 +22,7 @@ public class PotionsForMorePotionEffects {
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModPotions.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
     }

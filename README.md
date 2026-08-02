@@ -12,25 +12,33 @@ This mod is an add-on for mod **"[More Potion Effects](https://www.curseforge.co
 
 ## 🧪Currently implemented potions:
 
-1.  Sweet Potion
-2.  Disgusting Potion
-3.  Static Life Potion
-4.  Solid Shield Potion
-5.  Injury Limitation Potion
-6.  Immortal Potion
-7.  Immune Potion
-8.  Climbing Potion
-9.  Fragile Potion
-10.  Gills Potion
-11.  Glowing Gills Potion
-12.  Leeching Potion
-13.  Melee Domain Potion
-14.  More Range Potion
-15.  Touch Potion
-16.  Calming Potion
-17.  Fear Potion
-18.  True Damage Potion
-19.  Self-Healing Potion
-20.  Percentage Recovery Potion
+1. Sweet Potion
+2. Disgusting Potion
+3. Copper-Rich Potion
+4. Iron-Rich Potion
+5. Static Life Potion
+6. Solid Shield Potion
+7. Injury Limitation Potion
+8. Immortal Potion
+9. Immune Potion
+10. Climbing Potion
+11. Fragile Potion
+12. Gills Potion
+13. Glowing Gills Potion
+14. Leeching Potion
+15. Melee Domain Potion
+16. More Range Potion
+17. Touch Potion
+18. Calming Potion
+19. Fear Potion
+20. True Damage Potion
+21. Self-Healing Potion
+22. Percentage Recovery Potion
+23. Health Sacrifice Potion
+24. Lightly Loaded Potion
+25. Repair Potion
+26. Firm Potion
+27. Armor Broken Potion
+28. Bleeding Potion
 
 **(📢This mod is currently in early development and more potions will be added in future versions)**

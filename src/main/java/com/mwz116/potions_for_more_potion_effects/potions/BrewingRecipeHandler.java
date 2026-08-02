@@ -1,6 +1,7 @@
 package com.mwz116.potions_for_more_potion_effects.potions;
 
 import com.mwz116.potions_for_more_potion_effects.PotionsForMorePotionEffects;
+import com.mwz116.potions_for_more_potion_effects.block.ModBlocks;
 import com.mwz116.potions_for_more_potion_effects.item.ModItems;
 import net.minecraft.core.Holder;
 import net.minecraft.world.item.Item;
@@ -33,9 +34,19 @@ public class BrewingRecipeHandler {
                 Items.ROTTEN_FLESH);
 
         addPotionMix(builder,
+                ModPotions.COPPER_RICH_POTION,
+                Potions.WATER,
+                Items.COPPER_INGOT);
+
+        addPotionMix(builder,
+                ModPotions.IRON_RICH_POTION,
+                Potions.WATER,
+                Items.IRON_INGOT);
+
+        addPotionMix(builder,
                 ModPotions.STATIC_LIFE_POTION,
                 ModPotions.LONG_STATIC_LIFE_POTION,
-                Potions.AWKWARD,
+                ModPotions.COPPER_RICH_POTION,
                 Items.CLOCK,
                 Items.CLOCK);
 
@@ -43,10 +54,10 @@ public class BrewingRecipeHandler {
                 ModPotions.SOLID_SHIELD_POTION,
                 ModPotions.LONG_SOLID_SHIELD_POTION,
                 ModPotions.STRONG_SOLID_SHIELD_POTION,
-                ModPotions.SWEET_POTION,
-                Items.IRON_INGOT,
+                ModPotions.IRON_RICH_POTION,
+                ModBlocks.SOLID_DEEPSLATE.get().asItem(),
                 Items.REDSTONE,
-                Items.IRON_INGOT);
+                ModBlocks.SOLID_DEEPSLATE.get().asItem());
 
         addCorruptMix(builder,
                 ModPotions.SOLID_SHIELD_POTION,
@@ -131,7 +142,7 @@ public class BrewingRecipeHandler {
                 ModPotions.MORE_RANGE_POTION,
                 ModPotions.LONG_MORE_RANGE_POTION,
                 ModPotions.STRONG_MORE_RANGE_POTION,
-                ModPotions.SWEET_POTION,
+                ModPotions.IRON_RICH_POTION,
                 Items.IRON_SWORD,
                 Items.IRON_INGOT,
                 Items.GOLDEN_SWORD);
@@ -150,7 +161,16 @@ public class BrewingRecipeHandler {
                 ModPotions.LONG_CALMING_POTION,
                 ModPotions.STRONG_CALMING_POTION,
                 ModPotions.SWEET_POTION,
-                Items.WHEAT_SEEDS);
+                Items.HAY_BLOCK,
+                Items.WHEAT,
+                Items.HAY_BLOCK);
+
+        addPotionMix(builder,
+                ModPotions.FEAR_POTION,
+                ModPotions.LONG_FEAR_POTION,
+                ModPotions.STRONG_FEAR_POTION,
+                ModPotions.SWEET_POTION,
+                Items.ECHO_SHARD);
 
         addCorruptMix(builder,
                 ModPotions.CALMING_POTION,
@@ -193,6 +213,54 @@ public class BrewingRecipeHandler {
                 ModPotions.STRONG_PERCENTAGE_RECOVERY_POTION,
                 Potions.HEALING,
                 Items.WHEAT);
+
+        addPotionMix(builder,
+                ModPotions.HEALTH_SACRIFICE_POTION,
+                ModPotions.LONG_HEALTH_SACRIFICE_POTION,
+                ModPotions.STRONG_HEALTH_SACRIFICE_POTION,
+                Potions.FIRE_RESISTANCE,
+                Items.BLAZE_POWDER);
+
+        addPotionMix(builder,
+                ModPotions.LIGHTLY_LOADED_POTION,
+                ModPotions.LONG_LIGHTLY_LOADED_POTION,
+                ModPotions.STRONG_LIGHTLY_LOADED_POTION,
+                ModPotions.SWEET_POTION,
+                Items.LEATHER);
+
+        addPotionMix(builder,
+                ModPotions.REPAIR_POTION,
+                ModPotions.LONG_REPAIR_POTION,
+                ModPotions.STRONG_REPAIR_POTION,
+                ModPotions.IRON_RICH_POTION,
+                Items.IRON_BLOCK,
+                Items.COPPER_BLOCK,
+                Items.GOLD_BLOCK);
+
+        addPotionMix(builder,
+                ModPotions.FIRM_POTION,
+                ModPotions.LONG_FIRM_POTION,
+                ModPotions.STRONG_FIRM_POTION,
+                ModPotions.IRON_RICH_POTION,
+                Items.IRON_INGOT,
+                Items.REDSTONE,
+                Items.IRON_INGOT);
+
+        addCorruptMix(builder,
+                ModPotions.FIRM_POTION,
+                ModPotions.LONG_FIRM_POTION,
+                ModPotions.STRONG_FIRM_POTION,
+                ModPotions.ARMOR_BROKEN_POTION,
+                ModPotions.LONG_ARMOR_BROKEN_POTION,
+                ModPotions.STRONG_ARMOR_BROKEN_POTION,
+                true);
+
+        addPotionMix(builder,
+                ModPotions.BLEEDING_POTION,
+                ModPotions.LONG_BLEEDING_POTION,
+                ModPotions.STRONG_BLEEDING_POTION,
+                ModPotions.DISGUSTING_POTION,
+                ModItems.SHARP_BONE.get());
 
 
     }

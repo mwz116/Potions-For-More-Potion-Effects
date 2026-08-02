@@ -1,6 +1,7 @@
 package com.mwz116.potions_for_more_potion_effects.item;
 
 import com.mwz116.potions_for_more_potion_effects.PotionsForMorePotionEffects;
+import com.mwz116.potions_for_more_potion_effects.block.ModBlocks;
 import com.mwz116.potions_for_more_potion_effects.potions.ModPotions;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -21,8 +22,13 @@ public class ModCreativeModeTabs {
             .title(Component.translatable("itemGroup.potions_for_more_potion_effects"))
             .displayItems((parameters, output) -> {
                 output.accept(ModItems.SHARP_BONE.get());
+
+                output.accept(ModBlocks.SOLID_DEEPSLATE.get());
+
                 acceptPotion(output, ModPotions.SWEET_POTION);
                 acceptPotion(output, ModPotions.DISGUSTING_POTION);
+                acceptPotion(output, ModPotions.COPPER_RICH_POTION);
+
                 acceptPotion(output, ModPotions.STATIC_LIFE_POTION, ModPotions.LONG_STATIC_LIFE_POTION);
                 acceptPotion(output, ModPotions.SOLID_SHIELD_POTION, ModPotions.LONG_SOLID_SHIELD_POTION, ModPotions.STRONG_SOLID_SHIELD_POTION);
                 acceptPotion(output, ModPotions.INJURY_LIMITATION_POTION, ModPotions.LONG_INJURY_LIMITATION_POTION, ModPotions.STRONG_INJURY_LIMITATION_POTION);
@@ -41,6 +47,13 @@ public class ModCreativeModeTabs {
                 acceptPotion(output, ModPotions.TRUE_DAMAGE_POTION, ModPotions.LONG_TRUE_DAMAGE_POTION, ModPotions.STRONG_TRUE_DAMAGE_POTION);
                 acceptPotion(output, ModPotions.SELF_HEALING_POTION, ModPotions.LONG_SELF_HEALING_POTION, ModPotions.STRONG_SELF_HEALING_POTION);
                 acceptPotion(output, ModPotions.PERCENTAGE_RECOVERY_POTION, ModPotions.LONG_PERCENTAGE_RECOVERY_POTION, ModPotions.STRONG_PERCENTAGE_RECOVERY_POTION);
+                acceptPotion(output, ModPotions.HEALTH_SACRIFICE_POTION, ModPotions.LONG_HEALTH_SACRIFICE_POTION, ModPotions.STRONG_HEALTH_SACRIFICE_POTION);
+                acceptPotion(output, ModPotions.LIGHTLY_LOADED_POTION, ModPotions.LONG_LIGHTLY_LOADED_POTION, ModPotions.STRONG_LIGHTLY_LOADED_POTION);
+                acceptPotion(output, ModPotions.REPAIR_POTION, ModPotions.LONG_REPAIR_POTION, ModPotions.STRONG_REPAIR_POTION);
+                acceptPotion(output, ModPotions.ARMOR_BROKEN_POTION, ModPotions.LONG_ARMOR_BROKEN_POTION, ModPotions.STRONG_ARMOR_BROKEN_POTION);
+                acceptPotion(output, ModPotions.BLEEDING_POTION, ModPotions.LONG_BLEEDING_POTION, ModPotions.STRONG_BLEEDING_POTION);
+                acceptPotion(output, ModPotions.FIRM_POTION, ModPotions.LONG_FIRM_POTION, ModPotions.STRONG_FIRM_POTION);
+
             })
             .build()
 

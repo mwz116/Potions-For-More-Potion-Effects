@@ -5,6 +5,7 @@ import com.mwz116.potions_for_more_potion_effects.datagen.client.*;
 import com.mwz116.potions_for_more_potion_effects.datagen.client.language_provider.ModEnUsLanguageProvider;
 import com.mwz116.potions_for_more_potion_effects.datagen.client.language_provider.ModZhCnLanguageProvider;
 import com.mwz116.potions_for_more_potion_effects.datagen.server.*;
+import com.mwz116.potions_for_more_potion_effects.datagen.server.tags_provider.ModBlockTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -24,12 +25,14 @@ public class DataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
+        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new ModLootTableProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new ModBlockTagsProvider(packOutput, lookupProvider, existingFileHelper));
+
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModEnUsLanguageProvider(packOutput));
         generator.addProvider(event.includeClient(), new ModZhCnLanguageProvider(packOutput));
-
-        generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
-
 
     }
 }

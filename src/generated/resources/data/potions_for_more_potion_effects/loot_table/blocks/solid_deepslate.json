@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "potions_for_more_potion_effects:solid_deepslate"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "potions_for_more_potion_effects:blocks/solid_deepslate"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "A": {
+      "item": "minecraft:deepslate"
+    }
+  },
+  "pattern": [
+    "#A#",
+    "#A#",
+    "#A#"
+  ],
+  "result": {
+    "count": 1,
+    "id": "potions_for_more_potion_effects:solid_deepslate"
+  }
+}

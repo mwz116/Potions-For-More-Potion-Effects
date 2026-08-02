@@ -1,5 +1,6 @@
 package com.mwz116.potions_for_more_potion_effects.datagen.server;
 
+import com.mwz116.potions_for_more_potion_effects.block.ModBlocks;
 import com.mwz116.potions_for_more_potion_effects.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -20,6 +21,15 @@ public class ModRecipeProvider extends RecipeProvider {
                 .requires(Items.BONE)
                 .requires(Items.FLINT)
                 .unlockedBy("has_bone", has(Items.BONE))
+                .save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOLID_DEEPSLATE.get())
+                .pattern("#A#")
+                .pattern("#A#")
+                .pattern("#A#")
+                .define('A', Items.DEEPSLATE)
+                .define('#', Items.IRON_INGOT)
+                .unlockedBy("has_cobbled_deepslate", has(Items.COBBLED_DEEPSLATE))
                 .save(output);
 
     }

@@ -2,6 +2,7 @@ package com.mwz116.potions_for_more_potion_effects.datagen.client.language_provi
 
 import com.mwz116.potions_for_more_potion_effects.PotionsForMorePotionEffects;
 
+import com.mwz116.potions_for_more_potion_effects.block.ModBlocks;
 import com.mwz116.potions_for_more_potion_effects.item.ModItems;
 import com.mwz116.potions_for_more_potion_effects.potions.ModPotions;
 import com.mwz116.potions_for_more_potion_effects.potions.custom.ModPotion;
@@ -22,8 +23,13 @@ public class ModZhCnLanguageProvider extends LanguageProvider {
 
         add(ModItems.SHARP_BONE.get(), "尖骨");
 
+        add(ModBlocks.SOLID_DEEPSLATE.get(), "坚固的深板岩");
+
         addPotion(ModPotions.SWEET_POTION,"甘甜的");
         addPotion(ModPotions.DISGUSTING_POTION,"恶心的");
+        addPotion(ModPotions.COPPER_RICH_POTION, "富含铜的");
+        addPotion(ModPotions.IRON_RICH_POTION, "富含铁的");
+
         addPotion(ModPotions.STATIC_LIFE_POTION,"生命静止");
         addPotion(ModPotions.SOLID_SHIELD_POTION, "坚盾");
         addPotion(ModPotions.INJURY_LIMITATION_POTION, "限伤");
@@ -42,6 +48,13 @@ public class ModZhCnLanguageProvider extends LanguageProvider {
         addPotion(ModPotions.TRUE_DAMAGE_POTION, "真伤");
         addPotion(ModPotions.SELF_HEALING_POTION, "自愈");
         addPotion(ModPotions.PERCENTAGE_RECOVERY_POTION, "百分比恢复");
+        addPotion(ModPotions.HEALTH_SACRIFICE_POTION, "燃命");
+        addPotion(ModPotions.LIGHTLY_LOADED_POTION, "轻装上阵");
+        addPotion(ModPotions.REPAIR_POTION, "修复");
+        addPotion(ModPotions.FIRM_POTION, "坚定");
+        addPotion(ModPotions.ARMOR_BROKEN_POTION, "护甲破裂");
+        addPotion(ModPotions.BLEEDING_POTION, "流血");
+
     }
 
 

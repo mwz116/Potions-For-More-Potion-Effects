@@ -19,6 +19,10 @@ public class ModPotions {
 
     public static DeferredHolder<Potion, ModPotion> DISGUSTING_POTION = POTIONS.register("disgusting_potion", () -> new ModPotion("disgusting_potion"));
 
+    public static DeferredHolder<Potion, ModPotion> COPPER_RICH_POTION = POTIONS.register("copper_rich_potion", () -> new ModPotion("copper_rich_potion"));
+
+    public static DeferredHolder<Potion, ModPotion> IRON_RICH_POTION = POTIONS.register("iron_rich_potion", () -> new ModPotion("iron_rich_potion"));
+
     public static DeferredHolder<Potion, ModPotion> STATIC_LIFE_POTION = POTIONS.register("static_life", () -> new ModPotion(
             "static_life", new MobEffectInstance(MorePotionEffectsModMobEffects.STATIC_LIFE, 900 ,0)
     ));
@@ -221,6 +225,78 @@ public class ModPotions {
 
     public static DeferredHolder<Potion, ModPotion> STRONG_PERCENTAGE_RECOVERY_POTION = POTIONS.register("strong_percentage_recovery", () -> new ModPotion(
             "percentage_recovery", new MobEffectInstance(MorePotionEffectsModMobEffects.PERCENTAGE_RECOVERY, 1800 ,1)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> HEALTH_SACRIFICE_POTION = POTIONS.register("health_sacrifice", () -> new ModPotion(
+            "health_sacrifice", new MobEffectInstance(MorePotionEffectsModMobEffects.HEALTH_SACRIFICE, 900 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> LONG_HEALTH_SACRIFICE_POTION = POTIONS.register("long_health_sacrifice", () -> new ModPotion(
+            "health_sacrifice", new MobEffectInstance(MorePotionEffectsModMobEffects.HEALTH_SACRIFICE, 1800 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> STRONG_HEALTH_SACRIFICE_POTION = POTIONS.register("strong_health_sacrifice", () -> new ModPotion(
+            "health_sacrifice", new MobEffectInstance(MorePotionEffectsModMobEffects.HEALTH_SACRIFICE, 450 ,1)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> LIGHTLY_LOADED_POTION = POTIONS.register("lightly_loaded", () -> new ModPotion(
+            "lightly_loaded", new MobEffectInstance(MorePotionEffectsModMobEffects.LIGHTLY_LOADED, 3600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> LONG_LIGHTLY_LOADED_POTION = POTIONS.register("long_lightly_loaded", () -> new ModPotion(
+            "lightly_loaded", new MobEffectInstance(MorePotionEffectsModMobEffects.LIGHTLY_LOADED, 9600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> STRONG_LIGHTLY_LOADED_POTION = POTIONS.register("strong_lightly_loaded", () -> new ModPotion(
+            "lightly_loaded", new MobEffectInstance(MorePotionEffectsModMobEffects.LIGHTLY_LOADED, 1800 ,1)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> REPAIR_POTION = POTIONS.register("repair", () -> new ModPotion(
+            "repair", new MobEffectInstance(MorePotionEffectsModMobEffects.REPAIR, 900 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> LONG_REPAIR_POTION = POTIONS.register("long_repair", () -> new ModPotion(
+            "repair", new MobEffectInstance(MorePotionEffectsModMobEffects.REPAIR, 1800 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> STRONG_REPAIR_POTION = POTIONS.register("strong_repair", () -> new ModPotion(
+            "repair", new MobEffectInstance(MorePotionEffectsModMobEffects.REPAIR, 450 ,1)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> FIRM_POTION = POTIONS.register("firm", () -> new ModPotion(
+            "firm", new MobEffectInstance(MorePotionEffectsModMobEffects.FIRM, 3600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> LONG_FIRM_POTION = POTIONS.register("long_firm", () -> new ModPotion(
+            "firm", new MobEffectInstance(MorePotionEffectsModMobEffects.FIRM, 9600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> STRONG_FIRM_POTION = POTIONS.register("strong_firm", () -> new ModPotion(
+            "firm", new MobEffectInstance(MorePotionEffectsModMobEffects.FIRM, 1800 ,1)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> ARMOR_BROKEN_POTION = POTIONS.register("armor_broken", () -> new ModPotion(
+            "armor_broken", new MobEffectInstance(MorePotionEffectsModMobEffects.ARMOR_BROKEN, 3600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> LONG_ARMOR_BROKEN_POTION = POTIONS.register("long_armor_broken", () -> new ModPotion(
+            "armor_broken", new MobEffectInstance(MorePotionEffectsModMobEffects.ARMOR_BROKEN, 9600 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> STRONG_ARMOR_BROKEN_POTION = POTIONS.register("strong_armor_broken", () -> new ModPotion(
+            "armor_broken", new MobEffectInstance(MorePotionEffectsModMobEffects.ARMOR_BROKEN, 1800 ,1)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> BLEEDING_POTION = POTIONS.register("bleeding", () -> new ModPotion(
+            "bleeding", new MobEffectInstance(MorePotionEffectsModMobEffects.BLEEDING, 900 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> LONG_BLEEDING_POTION = POTIONS.register("long_bleeding", () -> new ModPotion(
+            "bleeding", new MobEffectInstance(MorePotionEffectsModMobEffects.BLEEDING, 1800 ,0)
+    ));
+
+    public static DeferredHolder<Potion, ModPotion> STRONG_BLEEDING_POTION = POTIONS.register("strong_bleeding", () -> new ModPotion(
+            "bleeding", new MobEffectInstance(MorePotionEffectsModMobEffects.BLEEDING, 450 ,1)
     ));
 
 

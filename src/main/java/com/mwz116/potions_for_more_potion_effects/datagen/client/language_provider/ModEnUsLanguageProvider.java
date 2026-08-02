@@ -2,6 +2,7 @@ package com.mwz116.potions_for_more_potion_effects.datagen.client.language_provi
 
 import com.mwz116.potions_for_more_potion_effects.PotionsForMorePotionEffects;
 
+import com.mwz116.potions_for_more_potion_effects.block.ModBlocks;
 import com.mwz116.potions_for_more_potion_effects.item.ModItems;
 import com.mwz116.potions_for_more_potion_effects.potions.ModPotions;
 import com.mwz116.potions_for_more_potion_effects.potions.custom.ModPotion;
@@ -22,8 +23,13 @@ public class ModEnUsLanguageProvider extends LanguageProvider {
 
         add(ModItems.SHARP_BONE.get(), "Sharp Bone");
 
+        add(ModBlocks.SOLID_DEEPSLATE.get(), "Solid Deepslate");
+
         addPotion(ModPotions.SWEET_POTION,"Sweet");
         addPotion(ModPotions.DISGUSTING_POTION,"Disgusting");
+        addPotion(ModPotions.COPPER_RICH_POTION, "Copper-Rich");
+        addPotion(ModPotions.IRON_RICH_POTION, "Iron-Rich");
+
         addPotion(ModPotions.STATIC_LIFE_POTION, "Static Life");
         addPotion(ModPotions.SOLID_SHIELD_POTION, "Solid Shield");
         addPotion(ModPotions.INJURY_LIMITATION_POTION, "Injury Limitation");
@@ -42,6 +48,13 @@ public class ModEnUsLanguageProvider extends LanguageProvider {
         addPotion(ModPotions.TRUE_DAMAGE_POTION, "True Damage");
         addPotion(ModPotions.SELF_HEALING_POTION, "Self-Healing");
         addPotion(ModPotions.PERCENTAGE_RECOVERY_POTION, "Percentage Recovery");
+        addPotion(ModPotions.HEALTH_SACRIFICE_POTION, "Health Sacrifice");
+        addPotion(ModPotions.LIGHTLY_LOADED_POTION, "Lightly Loaded");
+        addPotion(ModPotions.REPAIR_POTION, "Repair");
+        addPotion(ModPotions.FIRM_POTION, "Firm");
+        addPotion(ModPotions.ARMOR_BROKEN_POTION, "Armor Broken");
+        addPotion(ModPotions.BLEEDING_POTION, "Bleeding");
+
     }
 
 
